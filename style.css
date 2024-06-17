@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    font-family: 'Pacifico', sans-serif;
+}
+
+/*Menu*/
+
+.content {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c48f8f;
+    position: fixed;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo h1 {
+    color: #0f0f0f;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    text-transform: uppercase;
+    
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+
+}
+
+.content .list-menu {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .list-menu li a {
+    color: #070707;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: #0c0909;
+    border-bottom: 4px solid #77576a;
+    color: #96606d;
+}
+.list-menu {
+    display: flex;
+}
+
+.list-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.list-menu li {
+    margin-right: 20px;
+}
+
+
+.menu-toggle {
+    display: none; 
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+ 
+  
+/*first-section */
+
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./img/imagem_de_fundo.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first-section .conteudo-princial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.first-section h1 {
+    color: #b47c8b;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.first-section h2 {
+    color: #ac7e8a;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #96606d;
+    border-radius: 10px;
+    color: #0e0d0d;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+    margin: 1rem;
+}
+
+.btn button:hover {
+    border: 1px solid #cc978d;
+    background-color: transparent;
+    color: #b99088;
+}
+
+.btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    margin-top: 5rem; 
+    gap: 1rem; 
+}
+
+/*Sobre nós*/
+
+.sobre-nos {
+    background-color: #96606d;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #deafaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Indie Flower', bold;
+    font-size: 200px;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin: 20rem auto;
+    border: 3px solid rgb(46, 45, 45);
+    border-radius: 8px; 
+    margin-left: 50px;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Satisfy', bold;
+}
+
+.contentsobre h3 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Satisfy', bold;
+}
+
+.contentsobre p {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 2.5rem;
+    width: 600px;
+    font-family: 'Satisfy', bold;
+}
+
+/*Cardápio */
+
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(138, 82, 96);;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: 2rem;
+    
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: #0c0b0c;
+    text-transform: uppercase;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(22, 21, 21, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    background-color: #c78995;
+    border: none;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 1.5rem;
+    margin-left: auto; /* Adiciona margem à esquerda */
+    margin-right: auto; /* Adiciona margem à direita */
+    width: 90%; /* Use uma porcentagem ou vw para a largura */
+    height: auto; 
+    text-align: center;
+}
+
+.pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #523a41;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #472931;
+    transition: all 200ms ease-in;
+}
+
+.pedir:hover {
+    background-color: #161616;
+    color: #41232a;
+}
+
+
+.itens-cardapio {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.itens-cardapio .item {
+    background-color: #c78995;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%; 
+    height: auto; 
+    max-width: 90%;
+}
+
+.itens-cardapio .item h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: #131212;
+    text-align: center;
+}
+
+
+.itens-cardapio .item h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+    color: #292828;
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+.itens-cardapio div {
+    background-color: #1b1311;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%; 
+    height: 348px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.itens-cardapio .item .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #5a3a44;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #e69aae;
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .item .pedir:hover {
+    background-color: #a1828a;
+    color: #181616;
+}
+
+/*Contatos*/
+
+.contatos {
+    width: 100%;
+    color: #96606d;
+    text-align: center;
+    margin-top: auto;
+    font-size: 1.6rem;
+    padding: 4rem o;
+}
+
+.contatos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#contatos-img {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+#contato-link {
+    text-decoration: none;
+}
+
+#contato_content {
+    background-color:#292828;
+    padding: 3rem 3.5rem;
+    
+}
+
+#contato_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#contato_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+} 
+
+#contato_social_media .contato-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#contato_social_media .contato-link i {
+    font-size: 1.25rem;    
+}
+
+#contato_social_media .contato-link:hover {
+    transform: scale(1.2);
+    color: #302f2f;
+    box-shadow: 0px 0px 4px 2px #ffe5ec;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #0e0c0c;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: #f5f5f5;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+/*footer*/
+
+footer {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1.8rem 0;
+    font-size: 1.5rem;
+}
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #0e0c0c;
+    font-size: 1.5rem;
+    padding: 1.0rem;
+    font-weight: 120;
+}
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+     max-width: 74px;
+     transition: transform 0,4s
+    }  
+    
+    img:hover{
+        transform: scale(1.1)
+    }
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-left: 1rem 3rem;
+       
+    }
+
+    .sobre-nos img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+    .itens-cardapio img {
+        width: 250px;
+        height: 250px;
+       
+    }
+}
+/* Media query para telas entre 768px e 500px */
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .content {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        height: auto;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .list-menu {
+        display: none; /* Esconde a lista em telas menores */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-menu.active {
+        display: flex; /* Exibe a lista quando o menu está aberto */
+    }
+
+    .list-menu li {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin-bottom: 1rem; /* Adicione um espaçamento entre o logo e o menu */
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+    .one,
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: #52333a;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        display: block; 
+      }
+    
+    .list-menu {
+        display: none; 
+      }
+    
+    .content.on .list-menu {
+        display: flex; 
+      }
+    
+    .content.on .menu-toggle span {
+        background-color: transparent;
+      }
+    
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, -8px);
+      }
+    
+    .content.on .menu-toggle .two {
+        opacity: 0;
+      }
+    
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+      }
+    
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(132, 99, 99, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .list-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        gap: 1.5rem;
+    }
+
+    .content.on .list-menu li {
+       display: flex;
+       justify-content: center;
+    }
+
+    .content.on .list-menu li a {
+        font-size: 2rem;
+    }
+
+    .first-section h1 {
+        font-size: 4rem;
+    }
+
+    .first-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .btn button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .sobre-nos img {
+        width: 300px;
+        height: 300px;   
+        margin: 10rem 10rem;
+        border: 3px solid rgba(46, 45, 45);
+        border-radius: 2px; 
+        margin-left: 300px;
+       
+    }
+
+    .contentsobre h2 {
+        font-size: 4rem;
+    }
+
+    .contentsobre p {
+        font-size: 3rem;
+        width: 90%;
+    }
+
+    .itens-cardapio .item h3 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .itens-cardapio .item h4 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    .cardapio {
+        padding: 2rem;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(2, minmax(50px,350px));
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .itens-cardapio .item {
+        width: 100%; /* Ajusta a largura para ocupar todo o contêiner */
+        height: auto; /* Ajusta a altura automaticamente para acomodar o conteúdo */
+        margin: 1rem auto; /* Adiciona margem para espaçamento entre os itens */
+        padding: 1rem; /* Reduz o preenchimento interno */
+        background-color: #c78995;; /* Adiciona um fundo branco semitransparente para destacar o texto */
+        padding: 0.5rem;
+    }
+
+    .itens-cardapio img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        border-radius: 8px; 
+        margin: 10px;
+    }   
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .contatos-secao div {
+        margin: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .conteudo-princial h1 {
+        width: 500px;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .conteudo-princial h2 {
+        font-size: 3rem;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 650px));
+    }
+
+    .sobre-nos img {
+        width: 380px;
+        height: 250px;
+        margin-left: 80px;
+
+    }
+
+    .sobre-nos p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao {
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .first-section {
+        flex-direction: column;
+    }
+
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+ 
+    .content {
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .content .list-menu {
+        width: 100%;
+        gap: 1rem; /* Espaçamento entre os itens do menu */
+    }
+
+    .content .list-menu li {
+        margin-bottom: 1rem; /* Espaçamento entre os itens do menu */
+    }
+
+    .content .list-menu li a {
+        font-size: 1rem;
+    }
+    
+    .first-section h1 {
+        font-size: 3rem;
+    }
+
+    .first-section h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .main-content h1 {
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .main-content h2 {
+        width: 200px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .cardapio {
+        padding: 1rem;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .itens-cardapio .item {
+        width: 100%; /* Ajusta a largura para ocupar todo o contêiner */
+        height: auto; /* Ajusta a altura automaticamente para acomodar o conteúdo */
+        margin: 1rem auto; /* Adiciona margem para espaçamento entre os itens */
+        padding: 1rem; /* Reduz o preenchimento interno */
+    }
+
+    .itens-cardapio img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        object-fit: cover; /* Mantém a proporção da imagem e corta o excesso se necessário */
+        border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    }
+
+    .itens-cardapio .item h3 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .itens-cardapio .item h4 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do subtítulo */
+    }
+    .itens-cardapio {
+        grid-template-columns: 1fr;
+    }
+
+    .contentsobre p {
+        padding: 15px;
+    }
+}
+
