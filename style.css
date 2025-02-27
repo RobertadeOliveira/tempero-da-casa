@@ -580,7 +580,7 @@ footer {
     }
 }
 /* Media query para telas entre 768px e 500px */
-@media (max-width: 768px) {
+@media (max-width: 852px) {
     html {
         font-size: 45%;
     }
